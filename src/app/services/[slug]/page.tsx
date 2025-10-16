@@ -87,21 +87,11 @@ export default async function ServiceDetail({
               src={service.img}
               alt={service.title}
               fill
-              className='object-contain'
+              className='object-cover'
             />
           </div>
         </div>
       </section>
-      <p className='mt-3 text-sm'>
-        Original image URL:{' '}
-        <a
-          href={service.img}
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-blue-600 underline break-all'>
-          {service.img}
-        </a>
-      </p>
 
       {/* Placeholder body content inspired by reference layout */}
       <section className='mt-10 grid gap-8 lg:grid-cols-3'>

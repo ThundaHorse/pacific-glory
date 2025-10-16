@@ -1,9 +1,11 @@
-import Carousel from '@/components/Carousel';
+import Slider from '@/components/Slider';
 
 export default function About() {
   return (
     <div className='mx-auto max-w-7xl px-4 sm:px-6 py-12 min-h-screen'>
-      <section className='grid gap-8 lg:grid-cols-2 items-center'>
+      <Slider />
+
+      <section className='grid gap-8 lg:grid-cols-1 items-center'>
         <div>
           <h1 className='text-3xl font-bold'>About Pacific Glory</h1>
           <p className='mt-4 leading-7'>
@@ -34,22 +36,6 @@ export default function About() {
             </div>
           </div>
         </div>
-        <Carousel
-          slides={[
-            {
-              src: 'https://images.unsplash.com/photo-1526406915894-7bcd65f60845?q=80&w=1600&auto=format&fit=crop',
-              caption: 'Global air and sea consolidation'
-            },
-            {
-              src: 'https://images.unsplash.com/photo-1501630834273-4b5604d2ee31?q=80&w=1600&auto=format&fit=crop',
-              caption: 'Reliable warehousing and distribution'
-            },
-            {
-              src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop',
-              caption: 'Daily pick-ups and deliveries'
-            }
-          ]}
-        />
       </section>
 
       <section className='mt-12'>

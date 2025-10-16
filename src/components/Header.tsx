@@ -23,12 +23,12 @@ export default function Header() {
             <DesktopServicesDropdown />
             <Link
               href='/about'
-              className='hover:underline underline-offset-4'>
+              className='hover:shadow-md hover:scale-105'>
               About Us
             </Link>
             <Link
               href='/contact-us'
-              className='hover:underline underline-offset-4'>
+              className='hover:shadow-md hover:scale-105'>
               Contact
             </Link>
           </nav>
@@ -125,7 +125,7 @@ function DesktopServicesDropdown() {
       onBlur={handleBlur}>
       <Link
         href='#'
-        className='hover:underline underline-offset-4'>
+        className='hover:scale-105'>
         Services
       </Link>
       <div

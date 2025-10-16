@@ -11,7 +11,7 @@ export default function Services() {
     <div className='mx-auto max-w-7xl px-4 sm:px-6 py-12'>
       <h1 className='text-3xl font-bold'>Services</h1>
       <p className='opacity-80 mt-2'>Select a service to learn more.</p>
-      <ul className='mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <ul className='mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-8'>
         {SERVICES.map((s) => (
           <li
             key={s.slug}
