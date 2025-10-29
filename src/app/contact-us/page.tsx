@@ -76,11 +76,11 @@ export default function Contact() {
   const messageError = errors.message?.message;
 
   return (
-    <div className='relative min-h-[70vh] sm:pb-32 overflow-hidden bg-white/50'>
+    <div className='relative min-h-[70vh] sm:pb-32 overflow-hidden bg-white/30'>
       <div className='mx-auto max-w-7xl px-4 sm:px-6 py-14 sm:py-48'>
         <div className='grid lg:grid-cols-2'>
           <div className='lg:col-start-1 rounded-lg shadow-xl/30'>
-            <div className='rounded-lg bg-white/80 dark:bg-black/40 backdrop-blur border border-black/5 dark:border-white/10 p-12 hover:shadow-2xl'>
+            <div className='rounded-lg bg-white/80 dark:bg-black/40 backdrop-blur border border-black/5 dark:border-white/10 p-12 hover:shadow-2xl transition-shadow duration-300'>
               <h1 className='text-2xl font-bold text-center'>Contact Us</h1>
               <p className='text-sm opacity-80 mt-2 mb-4'>
                 We’d love to hear from you. Fill out the form and our team will
@@ -143,7 +143,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className='hidden lg:block rounded-lg overflow-hidden ml-1  lg:col-span-1 hover:shadow-2xl hover:brightness-90 transition-shadow duration-300'>
+          <div className='hidden lg:block rounded-lg overflow-hidden ml-2 lg:col-span-1 hover:shadow-2xl hover:brightness-90 transition-shadow duration-300'>
             <iframe
               title='Pacific Glory Location'
               src='https://www.google.com/maps?q=Pacific+Glory+USA+Inc,+Satellite+Boulevard+%23+560,+Duluth,+GA&output=embed&center=34.0022834,-84.0915066'

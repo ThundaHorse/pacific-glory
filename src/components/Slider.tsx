@@ -2,9 +2,9 @@
 import { useState, useEffect, JSX } from 'react';
 import Image from 'next/image';
 import { StaticImageData } from 'next/image';
-import image1 from '../../public/slider1.avif';
-import image2 from '../../public/slider2.avif';
-import image3 from '../../public/slider3.avif';
+import image1 from '../../public/slider1.webp';
+import image2 from '../../public/slider2.webp';
+import image3 from '../../public/slider3.webp';
 // import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Interface for image data
@@ -109,15 +109,16 @@ export default function ImageSlider(): JSX.Element {
         onClick={nextSlide}>
         <ChevronRight className='text-gray-400 group-hover:text-white' />
       </button> */}
-      <div className='flex justify-center mt-4'>
+      <div className='flex justify-center mt-4 mb-4'>
         {images.map((_, index) => (
           <div
             key={index}
-            className={`h-1 w-10 mx-1 ${
+            className={`h-4 rounded-lg w-4 mx-2 border-b-gray-200 ${
               index === currentIndex
-                ? 'bg-[#beff46] rounded-xl'
-                : 'bg-gray-300 rounded-xl'
-            } transition-all duration-500 ease-in-out`}></div>
+                ? 'bg-green-300 rounded-xl'
+                : 'bg-gray-200 rounded-xl'
+            } transition-all duration-500 ease-in-out hover:cursor-pointer hover:opacity-80`}
+            onClick={() => setCurrentIndex(index)}></div>
         ))}
       </div>
     </div>
